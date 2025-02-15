@@ -3,3 +3,6 @@ kind: Kustomization
 resources:
 - gitrepo-yaml
 - kustomise.yaml
+- nginx-image-repo.yaml
+- nginx-image-policy.yaml
+- imageupdateautomation.yaml

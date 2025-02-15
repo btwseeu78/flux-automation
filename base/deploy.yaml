@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - image: nginx
-        name: nginx
+        name: nginx # {"$imagepolicy": "default:nginx-image-policy"}
         resources:
           requests:
             cpu: 100m
