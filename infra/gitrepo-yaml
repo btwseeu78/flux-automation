@@ -1,0 +1,11 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: flux-automation
+spec:
+  url: https://github.com/btwseeu78/flux-automation
+  interval: 5m
+  secretRef:
+    name: flux-secret
+  ref:
+    branch: master

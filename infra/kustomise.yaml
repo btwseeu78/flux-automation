@@ -1,0 +1,48 @@
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1
+kind: Kustomization
+metadata:
+  name: flux-automation
+  namespace: default
+spec:
+  interval: 10m
+  targetNamespace: dev
+  sourceRef:
+    kind: GitRepository
+    name: flux-automation
+  path: "./dev"
+  prune: true
+  timeout: 1m
+...
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1
+kind: Kustomization
+metadata:
+  name: flux-automation
+  namespace: default
+spec:
+  interval: 10m
+  targetNamespace: int
+  sourceRef:
+    kind: GitRepository
+    name: flux-automation
+  path: "./int"
+  prune: true
+  timeout: 1m
+...
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1
+kind: Kustomization
+metadata:
+  name: flux-automation
+  namespace: default
+spec:
+  interval: 10m
+  targetNamespace: default
+  sourceRef:
+    kind: GitRepository
+    name: flux-automation
+  path: "./infra"
+  prune: true
+  timeout: 1m
+...
