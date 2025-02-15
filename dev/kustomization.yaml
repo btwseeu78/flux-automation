@@ -5,5 +5,5 @@ resources:
 namespace: dev
 images:
 - name: nginx
-  newName: nginx  # {"$imagepolicy": "default:nginx-image-policy:name"}
-  newTag: 1.10-alpine # {"$imagepolicy": "default:nginx-image-policy:tag"}
+  newName: docker.io/nginx # {"$imagepolicy": "default:nginx-image-policy:name"}
+  newTag: 1.27.4 # {"$imagepolicy": "default:nginx-image-policy:tag"}
