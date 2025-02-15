@@ -6,4 +6,4 @@ namespace: dev
 images:
 - name: nginx
   newName: nginx
-  newTag: 1.10-alpine
+  newTag: 1.10-alpine # {"$imagepolicy": "default:nginx-image-policy:tag"}
