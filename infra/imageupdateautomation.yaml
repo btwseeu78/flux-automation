@@ -17,7 +17,7 @@ spec:
         name: fluxcdbot
       messageTemplate: '{{range .Changed.Changes}}{{print .OldValue}} -> {{println .NewValue}}{{end}}'
     push:
-      branch: dev
+      branch: master
   update:
     path: ./dev
     strategy: Setters

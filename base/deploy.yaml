@@ -16,8 +16,8 @@ spec:
         app: test-pod
     spec:
       containers:
-      - image: nginx
-        name: nginx # {"$imagepolicy": "default:nginx-image-policy"}
+      - image: nginx # {"$imagepolicy": "default:nginx-image-policy"}
+        name: nginx
         resources:
           requests:
             cpu: 100m
