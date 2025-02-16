@@ -9,5 +9,3 @@ spec:
   url: oci://ghcr.io/fluxcd/flagger-manifests
   ref:
     semver: 1.x # update to the latest version 
-  verify: # verify the artifact signature with Cosign keyless
-    provider: cosign

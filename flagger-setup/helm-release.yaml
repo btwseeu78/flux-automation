@@ -19,5 +19,3 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: flagger
-      verify: # verify the chart signature with Cosign keyless
-        provider: cosign
