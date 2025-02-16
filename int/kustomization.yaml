@@ -5,6 +5,6 @@ resources:
 namespace: int
 images:
 - name: nginx
-  newName: nginx
-  newTag: 1.10-alpine
+  newName: nginx  # {"$imagepolicy": "default:nginx-image-policy:name"}
+  newTag: 1.10-alpine # {"$imagepolicy": "default:nginx-image-policy:tag"}
 
