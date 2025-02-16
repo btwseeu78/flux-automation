@@ -5,3 +5,4 @@ resources:
 - flagger-load-tester.yaml
 - flagger-ns.yaml
 - helm-release.yaml
+- load-tester-install.yaml
