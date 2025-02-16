@@ -54,7 +54,7 @@ metadata:
   namespace: flagger-system
 spec:
   interval: 10m
-  targetNamespace: default
+  targetNamespace: flagger-system
   sourceRef:
     kind: GitRepository
     name: flux-automation
